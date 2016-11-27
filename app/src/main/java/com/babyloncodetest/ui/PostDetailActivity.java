@@ -52,19 +52,21 @@ public class PostDetailActivity extends AppCompatActivity implements IPostDetail
         PostResponse post = unWrapPost(getIntent());
         initView(post);
 
-        mPresenter.getCommentList(post.getPostId());
+
     }
 
     private void initView(PostResponse post) {
         setSupportActionBar(mBinding.toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         getSupportActionBar().setTitle(post.getTitle());
+
         mCommentAdapter = new CommentListAdapter();
         mBinding.commentList.setHasFixedSize(true);
         mBinding.commentList.setLayoutManager(new LinearLayoutManager(this));
         mBinding.commentList.setAdapter(mCommentAdapter);
 
+        mPresenter.bindPost(post, getResources().getString(R.string.loading_comments));
+        mPresenter.getCommentList(post.getPostId());
     }
 
     @Override
