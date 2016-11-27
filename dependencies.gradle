@@ -1,0 +1,31 @@
+ext {
+
+    okhttpVersion = '3.4.1'
+    retrofitVersion = '2.1.0'
+    supportLibVersion = '25.0.0'
+
+    dependencies = [
+            //support
+            appCompat            : "com.android.support:appcompat-v7:$supportLibVersion",
+            cardView             : "com.android.support:cardview-v7:$supportLibVersion",
+            recyclerView         : "com.android.support:recyclerview-v7:$supportLibVersion",
+            design               : "com.android.support:design:$supportLibVersion",
+
+            //networking
+            retrofit             : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitConverterGson: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            retrofitRxCallAdatper: "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion",
+
+            okhttp               : "com.squareup.okhttp3:okhttp:$okhttpVersion",
+            okhttpInterceptor    : "com.squareup.okhttp3:logging-interceptor:$okhttpVersion",
+
+            //image handler
+            glide                : "com.github.bumptech.glide:glide:3.7.0",
+            circleImageView      : 'de.hdodenhof:circleimageview:2.1.0',
+
+            //rx
+            rxjava               : "io.reactivex:rxjava:1.1.6",
+            rxandroid            : "io.reactivex:rxandroid:1.2.1",
+    ]
+}
+

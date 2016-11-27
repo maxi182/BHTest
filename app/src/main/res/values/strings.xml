@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BH Test</string>
+    <string name="cant_comments">5</string>
+    <string name="comments">Comments:</string>
+    <string name="no_comments">No comments available</string>
+
+    <string name="error_message">Something went wrong :(</string>
+</resources>
