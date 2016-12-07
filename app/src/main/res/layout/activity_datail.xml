@@ -1,17 +1,14 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
     <data>
-
         <import type="android.view.View" />
 
         <variable
             name="post"
             type="com.babyloncodetest.model.PostResponse" />
     </data>
-
-        <android.support.design.widget.CoordinatorLayout
+       <android.support.design.widget.CoordinatorLayout
             android:id="@+id/cordinator"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -46,9 +43,7 @@
 
                 </android.support.design.widget.CollapsingToolbarLayout>
 
-
             </android.support.design.widget.AppBarLayout>
-
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/comment_list"
@@ -60,8 +55,7 @@
             <include
                 android:id="@+id/progress"
                 layout="@layout/partial_progress_bar" />
-
-
+           
         </android.support.design.widget.CoordinatorLayout>
 
 </layout>
